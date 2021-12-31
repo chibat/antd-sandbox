@@ -1,127 +1,140 @@
-import { Button, DatePicker, version, PageHeader, Affix } from 'antd';
+import { Button, DatePicker, version, PageHeader, Affix, Layout, Menu, Breadcrumb } from 'antd';
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 //import logo from './logo.svg';
 import './App.css';
 
+const { Header, Content, Footer } = Layout;
+
 function App() {
   return (
-    <div className="App">
-      <Affix offsetTop={0.1}>
-        <PageHeader
-          className="site-page-header"
-          onBack={() => null}
-          title="Title"
-          subTitle="This is a subtitle"
-          style={{ zIndex: 100, background: "#eeeeee" }}
-        />
-      </Affix>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Routes>
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-      aaa<br />
-    </div>
+    <Layout>
+      <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+        <div className="logo" />
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+          <Menu.Item key="1">nav 1</Menu.Item>
+          <Menu.Item key="2">nav 2</Menu.Item>
+          <Menu.Item key="3">nav 3</Menu.Item>
+        </Menu>
+      </Header>
+      <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>List</Breadcrumb.Item>
+          <Breadcrumb.Item>App</Breadcrumb.Item>
+        </Breadcrumb>
+        <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+          Content
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+          </Routes>
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+          aaa<br />
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    </Layout>
   );
 }
 
